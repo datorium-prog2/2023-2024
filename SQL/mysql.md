@@ -44,4 +44,4 @@ CREATE TABLE IF NOT EXISTS Rents (
 SELECT Rents.*, Clients.email
 FROM Rents
 INNER JOIN Clients ON Rents.client_id = Clients.client_id;
-```sql
+```
