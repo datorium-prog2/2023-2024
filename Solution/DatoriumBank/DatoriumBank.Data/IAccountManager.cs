@@ -1,4 +1,4 @@
-﻿namespace DatoriumBank.Console
+﻿namespace DatoriumBank.Data
 {
     public interface IAccountManager
     {

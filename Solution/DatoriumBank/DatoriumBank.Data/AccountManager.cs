@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Security.Cryptography.X509Certificates;
 
-namespace DatoriumBank.Console
+namespace DatoriumBank.Data
 {
     public class AccountManager : IAccountManager
     {

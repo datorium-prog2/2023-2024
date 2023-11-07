@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatoriumBank.Console", "DatoriumBank.Console\DatoriumBank.Console.csproj", "{481495EE-B3A3-4912-BFA4-7354BF8C957F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatoriumBank.Console", "DatoriumBank.Console\DatoriumBank.Console.csproj", "{481495EE-B3A3-4912-BFA4-7354BF8C957F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatoriumBank.Data", "DatoriumBank.Data\DatoriumBank.Data.csproj", "{095F5AD3-78D3-43E7-A88E-5BFF87701F9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{481495EE-B3A3-4912-BFA4-7354BF8C957F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{481495EE-B3A3-4912-BFA4-7354BF8C957F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{481495EE-B3A3-4912-BFA4-7354BF8C957F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{095F5AD3-78D3-43E7-A88E-5BFF87701F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{095F5AD3-78D3-43E7-A88E-5BFF87701F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{095F5AD3-78D3-43E7-A88E-5BFF87701F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{095F5AD3-78D3-43E7-A88E-5BFF87701F9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

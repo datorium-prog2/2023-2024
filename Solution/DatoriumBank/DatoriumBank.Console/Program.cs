@@ -1,5 +1,6 @@
 ﻿
-using DatoriumBank.Console;
+using DatoriumBank.Business;
+using DatoriumBank.Data;
 
 public class Program
 {
@@ -8,6 +9,8 @@ public class Program
         var client1 = new Client("Anna", "Bērziņa", "anna.b@somemail.com");
         var client2 = new Client("Nikola", "Ozoliņa", "nikola.o@somemail.com");
         Console.WriteLine("Šeit ir jaunā datubāzes menedžēšana");
+
+        var userService = new UserService();
 
         var bankDbContext = new BankDbContext();
         var userManager = new UserManager(bankDbContext);
