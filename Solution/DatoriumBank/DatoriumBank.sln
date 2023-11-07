@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatoriumBank.Console", "Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatoriumBank.Data", "DatoriumBank.Data\DatoriumBank.Data.csproj", "{095F5AD3-78D3-43E7-A88E-5BFF87701F9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatoriumBank.Business", "DatoriumBank.Business\DatoriumBank.Business.csproj", "{E6987F5E-AEA2-4FA2-8F07-A84226315935}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{095F5AD3-78D3-43E7-A88E-5BFF87701F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{095F5AD3-78D3-43E7-A88E-5BFF87701F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{095F5AD3-78D3-43E7-A88E-5BFF87701F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6987F5E-AEA2-4FA2-8F07-A84226315935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6987F5E-AEA2-4FA2-8F07-A84226315935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6987F5E-AEA2-4FA2-8F07-A84226315935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6987F5E-AEA2-4FA2-8F07-A84226315935}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
