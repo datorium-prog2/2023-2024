@@ -1,4 +1,4 @@
-﻿using DatoriumBank.Data;
+﻿using DatoriumBank.Data.Entity;
 using Microsoft.EntityFrameworkCore;
 
 namespace DatoriumBank.Data

@@ -1,4 +1,7 @@
-﻿namespace DatoriumBank.Data
+﻿
+using DatoriumBank.Data.Entity;
+
+namespace DatoriumBank.Data.Managers.Interface
 {
     public interface IUserManager
     {

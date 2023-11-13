@@ -1,6 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DatoriumBank.Data.Entity;
+using DatoriumBank.Data.Managers.Interface;
+using Microsoft.EntityFrameworkCore;
 
-namespace DatoriumBank.Data
+namespace DatoriumBank.Data.Managers
 {
     public class AccountManager : IAccountManager
     {
@@ -20,6 +22,12 @@ namespace DatoriumBank.Data
             return _bankDbContext.Accounts
                 .Include(x => x.Client)
                 .First(account => account.Id == id);
+        }
+
+        public void UpdateAccount(Account account)
+        {
+            _bankDbContext.Accounts.Update(account);
+            _bankDbContext.SaveChanges();
         }
     }
 }

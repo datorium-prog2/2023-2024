@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace DatoriumBank.Data
+
+namespace DatoriumBank.Data.Entity
 {
     public class Client
     {

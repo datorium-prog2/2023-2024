@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Transactions;
 
-namespace DatoriumBank.Data
+namespace DatoriumBank.Data.Entity
 {
     public class Account
     {
