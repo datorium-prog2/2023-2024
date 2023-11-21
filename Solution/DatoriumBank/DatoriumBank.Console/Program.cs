@@ -40,6 +40,45 @@ public class Program
 
         var newAccountFromDb = accountManager.GetAccount(account.Id);
         Console.WriteLine($"Update'otais konts no datubāzes pēc Update {newAccountFromDb.Client.Name} {newAccountFromDb.IBAN} {newAccountFromDb.Name}");
-
+        ShowMenu();
     }
+
+    public static void ShowMenu()
+    {
+        Console.WriteLine("Pieejamās darbības:");
+        Console.WriteLine("1. Pievienot jaunu klientu");
+        Console.WriteLine("2. Dzēst klienta informāciju");
+        ChooseAction();
+    }
+
+    public static void ChooseAction()
+    {
+        var action = Console.ReadLine();
+
+        Console.WriteLine($"Klients veica {action}");
+    }
+
+    /*
+    //Saraksts ar klientiem:
+    //1. Anna Bērziņa - epasts
+    //2. vārds uzvārds epasts
+    //3.  asdasdas
+    //4. asdasdasd
+    //
+    //Pieejamās darbības:
+    //1. Pievienot jaunu klientu
+    //2. Dzēst klienta informāciju
+
+
+
+    1
+
+    //Ievadi klienta vārdu
+    //Ievadi klienta uzvārdu
+    //Ievadi klienta e-pastu
+
+    2
+
+    Ievadi klienta ID
+    //*/
 }
