@@ -3,47 +3,32 @@ using DatoriumBank.Business;
 using DatoriumBank.Data;
 using DatoriumBank.Data.Entity;
 using DatoriumBank.Data.Managers;
+using System;
+using static System.Collections.Specialized.BitVector32;
 
 public class Program
 {
+    private static UserManager _userManager { get; set; }
     public static void Main()
     {
-        var client1 = new Client("Anna", "Bērziņa", "anna.b@somemail.com");
-        var client2 = new Client("Nikola", "Ozoliņa", "nikola.o@somemail.com");
         Console.WriteLine("Šeit ir jaunā datubāzes menedžēšana");
 
         var userService = new UserService();
 
         var bankDbContext = new BankDbContext();
-        var userManager = new UserManager(bankDbContext);
-        userManager.AddClient(client1);
-        userManager.AddClient(client2);
-        var clientsFromORM = userManager.GetClients("Anna");
+        _userManager = new UserManager(bankDbContext);
+        var clientsFromORM = _userManager.GetClients("Anna");
         foreach (var client in clientsFromORM)
         {
             Console.WriteLine($"{client.Name} {client.Surname} {client.Email}");
         }
-        var account = new Account()
-        {
-            IBAN = "LV12UNLA121354567567",
-            ClientId = client1.Id,
-            Name = "Darba konts"
-        };
+
         var accountManager = new AccountManager(bankDbContext);
-        accountManager.AddAccount(account);
-        var accountFromDb = accountManager.GetAccount(account.Id);
-        Console.WriteLine($"Konts pēc pievienošanas {accountFromDb.Client.Name} {accountFromDb.IBAN} {accountFromDb.Name}");
 
-        accountFromDb.Name = "Izklaides konts";
-        accountManager.UpdateAccount(accountFromDb);
-        Console.WriteLine($"Konts pēc Update {accountFromDb.Client.Name} {accountFromDb.IBAN} {accountFromDb.Name}");
-
-        var newAccountFromDb = accountManager.GetAccount(account.Id);
-        Console.WriteLine($"Update'otais konts no datubāzes pēc Update {newAccountFromDb.Client.Name} {newAccountFromDb.IBAN} {newAccountFromDb.Name}");
         ShowMenu();
     }
 
-    public static void ShowMenu()
+    private static void ShowMenu()
     {
         Console.WriteLine("Pieejamās darbības:");
         Console.WriteLine("1. Pievienot jaunu klientu");
@@ -51,11 +36,30 @@ public class Program
         ChooseAction();
     }
 
-    public static void ChooseAction()
+    private static void ChooseAction()
     {
         var action = Console.ReadLine();
 
         Console.WriteLine($"Klients veica {action}");
+
+        if (int.Parse(action) == 1)
+        {
+            Console.WriteLine("Ir izvēlēts pievienot jaunu klientu!");
+            AddClient();
+        }
+    }
+
+    private static void AddClient()
+    {
+        Console.WriteLine("Norādi klienta vārdu:");
+        var name = Console.ReadLine();
+        Console.WriteLine("Norādi klienta uzvārdu:");
+        var surname = Console.ReadLine();
+        Console.WriteLine("Norādi klienta e-pastu:");
+        var email = Console.ReadLine();
+
+        var client = new Client(name, surname, email);
+        _userManager.AddClient(client);
     }
 
     /*
