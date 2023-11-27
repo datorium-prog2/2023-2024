@@ -18,6 +18,14 @@ namespace DatoriumBank.Data.Managers
             _bankDbContext.SaveChanges();
         }
 
+        public void DeleteClient(int clientId)
+        {
+            var client = _bankDbContext.Clients
+                .First(x => x.Id == clientId);
+            _bankDbContext.Clients.Remove(client);
+            _bankDbContext.SaveChanges();
+        }
+
         public List<Client> GetClients(string name)
         {
             return _bankDbContext.Clients

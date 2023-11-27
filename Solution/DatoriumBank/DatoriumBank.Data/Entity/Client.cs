@@ -21,5 +21,11 @@ namespace DatoriumBank.Data.Entity
             Surname = surname;
             Email = email;
         }
+        public override string ToString()
+        {
+            return $"{Id} {Name} {Surname} {Email}";
+        }
     }
+
+
 }

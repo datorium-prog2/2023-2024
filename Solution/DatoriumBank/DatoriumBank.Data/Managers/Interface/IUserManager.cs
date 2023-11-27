@@ -7,5 +7,6 @@ namespace DatoriumBank.Data.Managers.Interface
     {
         public void AddClient(Client client);
         public List<Client> GetClients(string name);
+        public void DeleteClient(int clientId);
     }
 }
