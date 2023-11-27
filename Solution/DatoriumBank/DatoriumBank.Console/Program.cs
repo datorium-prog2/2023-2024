@@ -12,12 +12,7 @@ public class Program
     public static void Main()
     {
         Console.WriteLine("Šeit ir jaunā datubāzes menedžēšana");
-        //
 
-        var client1 = new Client("Anna", "Bērziņa", "Anna@gmail.com");
-        var client2 = client1;
-        client2.Name = "Lūcija";
-        //
         var userService = new UserService();
 
         var bankDbContext = new BankDbContext();
