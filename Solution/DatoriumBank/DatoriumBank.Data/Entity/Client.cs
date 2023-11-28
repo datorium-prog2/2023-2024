@@ -14,6 +14,8 @@ namespace DatoriumBank.Data.Entity
         public string Surname { get; set; }
         [Column("ClientEmail")]
         public string Email { get; set; }
+        //public Account Accounts { get; set; }
+        //public int AccountId { get; set; }
 
         public Client(string name, string surname, string email)
         {

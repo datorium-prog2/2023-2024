@@ -7,6 +7,7 @@ namespace DatoriumBank.Data
     {
         public DbSet<Client> Clients { get; set; }
         public DbSet<Account> Accounts { get; set; }
+        public DbSet<BankTransaction> Transactions { get; set; }
         public BankDbContext()
         {
             base.Database.EnsureCreated();
