@@ -13,8 +13,6 @@ public class Program
     {
         Console.WriteLine("Šeit ir jaunā datubāzes menedžēšana");
 
-        var userService = new UserService();
-
         var bankDbContext = new BankDbContext();
         _userManager = new UserManager(bankDbContext);
         var clientsFromORM = _userManager.GetClients("Anna");
@@ -24,7 +22,8 @@ public class Program
         }
 
         var accountManager = new AccountManager(bankDbContext);
-
+        var transactionManager = new TransactionManager(bankDbContext);
+        var bankTransactionService = new BankTransactionsService(transactionManager, accountManager);
         ShowMenu();
     }
 

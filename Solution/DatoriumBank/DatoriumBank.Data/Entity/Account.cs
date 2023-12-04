@@ -12,5 +12,6 @@ namespace DatoriumBank.Data.Entity
         public Client Client { get; set; }
         public int ClientId { get; set; }
         public string Name { get; set; }
+        public decimal Money { get; set; }
     }
 }
