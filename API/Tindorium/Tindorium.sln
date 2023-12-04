@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tindorium.API", "Tindorium.API\Tindorium.API.csproj", "{3BFC320E-1A12-4316-B846-7F1B5BF4F1F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tindorium.Data", "Tindorium.Data\Tindorium.Data.csproj", "{216863A2-01E1-46BC-A1C9-E55B25342C1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BFC320E-1A12-4316-B846-7F1B5BF4F1F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BFC320E-1A12-4316-B846-7F1B5BF4F1F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BFC320E-1A12-4316-B846-7F1B5BF4F1F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BFC320E-1A12-4316-B846-7F1B5BF4F1F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{216863A2-01E1-46BC-A1C9-E55B25342C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{216863A2-01E1-46BC-A1C9-E55B25342C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{216863A2-01E1-46BC-A1C9-E55B25342C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{216863A2-01E1-46BC-A1C9-E55B25342C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F22162E-A748-43B3-91E1-E7E8639DAC0A}
+	EndGlobalSection
+EndGlobal
