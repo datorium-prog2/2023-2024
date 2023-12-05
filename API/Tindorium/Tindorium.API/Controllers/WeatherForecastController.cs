@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Tindorium.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]")]//locahost:7157/weatherforecast
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
