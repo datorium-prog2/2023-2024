@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Tindorium.Data;
 
 namespace Tindorium.API.Controllers
 {
@@ -22,10 +23,29 @@ namespace Tindorium.API.Controllers
         }
 
         [HttpGet]
-        [Route("GetUser")]
+        [Route("GetUser")]//localhost:7157/User/GetUser?id=12
         public string GetUser(int id)
         {
             return "pārstrādāts " + id;
         }
+
+        [HttpPost]
+        [Route("AddUser")]
+        public string AddUser([FromBody]UserDTO user)//localhost:7157/User/AddUser    body-> {"name": "vārds"}
+        {
+            return "user name " + user.Name;
+        }
+
+        [HttpPost]
+        [Route("Test")]
+        public string Test()//https://localhost:7157/User/Test
+        {
+            return "test data";
+        }
     }
+}
+
+public class UserDTO
+{
+    public string Name { get; set; }
 }
