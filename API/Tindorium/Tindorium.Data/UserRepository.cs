@@ -24,22 +24,3 @@ namespace Tindorium.Data
 
     }
 }
-
-class Car
-{
-    private string _color;
-    public string Color
-    {
-        get { return _color; }
-        set { 
-            if(value == "gray")
-            {
-                throw new ArgumentException("cannot set color to gray");
-            }
-            else
-            {
-                _color = value;
-            }
-        }
-    }
-}
