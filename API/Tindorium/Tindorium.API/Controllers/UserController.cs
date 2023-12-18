@@ -8,7 +8,10 @@ namespace Tindorium.API.Controllers
     public class UserController : ControllerBase //[controller] == User
     {
         private UserRepository _userRepository;
-        public UserController(UserRepository userRepository) //Scoped -> 
+        //Scoped -> uz katru request jauns objekts
+        //Transient -> always different
+        //Singleton -> visu laiku 1 objekts.
+        public UserController(UserRepository userRepository)
         {
             _userRepository = userRepository;
         }

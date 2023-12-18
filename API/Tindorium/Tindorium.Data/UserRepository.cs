@@ -20,7 +20,5 @@ namespace Tindorium.Data
         {
             return _dbContext.Users.ToList();
         }
-
-
     }
 }
