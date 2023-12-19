@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
-
-namespace Tindorium.Data
+﻿namespace Tindorium.Data
 {
     public class UserRepository
     {
@@ -19,6 +17,15 @@ namespace Tindorium.Data
         public List<User> Get()
         {
             return _dbContext.Users.ToList();
+        }
+
+        public User GetPotentialMatch()
+        {
+            var random = new Random();
+            var users = _dbContext.Users.ToList();
+            var totalUserCount = users.Count;
+            var randomNumber = random.Next(0, totalUserCount);
+            return users[randomNumber];
         }
     }
 }

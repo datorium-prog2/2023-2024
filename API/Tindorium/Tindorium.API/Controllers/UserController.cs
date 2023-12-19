@@ -37,6 +37,13 @@ namespace Tindorium.API.Controllers
             return "pārstrādāts " + id;
         }
 
+        [HttpGet]
+        [Route("GetPotentialMatch")]
+        public User GetPotentialMatch()
+        {
+            return _userRepository.GetPotentialMatch();
+        }
+
         [HttpPost]
         [Route("AddUser")]
         public User AddUser([FromBody] UserDTO user)//localhost:7157/User/AddUser    body-> {"name": "vārds"}
