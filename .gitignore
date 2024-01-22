@@ -12,4 +12,6 @@ API/Tindorium/Tindorium.API/bin/
 API/Tindorium/Tindorium.Data/obj/
 API/Tindorium/Tindorium.Data/bin/
 API/Tindorium/Tindorium.API/bin/
-/.vs/2023-2024/FileContentIndex/911f010b-d2cb-4e40-a68d-f0ace2246b59.vsidx
+bin/
+obj/
+.vs/
