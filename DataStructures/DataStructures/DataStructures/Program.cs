@@ -1,3 +1,4 @@
-﻿using DataStructures;
+﻿
+using DataStructures;
 
-var minesweeper = new Minesweeper();
+new HashsetExample();
