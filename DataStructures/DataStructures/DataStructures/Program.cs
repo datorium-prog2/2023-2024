@@ -1,4 +1,4 @@
 ﻿
 using DataStructures;
 
-new HashsetExample();
+new VectorSum();
