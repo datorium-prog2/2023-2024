@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransferLearningTF", "TransferLearningTF\TransferLearningTF.csproj", "{B029E24F-84D4-45FD-8C72-D430027A0E52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B029E24F-84D4-45FD-8C72-D430027A0E52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B029E24F-84D4-45FD-8C72-D430027A0E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B029E24F-84D4-45FD-8C72-D430027A0E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B029E24F-84D4-45FD-8C72-D430027A0E52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8263DCB-2C91-433E-B116-123C6AA15599}
+	EndGlobalSection
+EndGlobal
