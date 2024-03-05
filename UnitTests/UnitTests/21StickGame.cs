@@ -32,9 +32,25 @@ namespace UnitTests
             StickCount -= pulledStickCount;
             IsPlayersTurn = false;
         }
-        // PlayerMove (int) cik sērkociņus izvelk
 
-        // ComputerMove
+        public void ComputerMove()
+        {
+            if (IsPlayersTurn)
+            {
+                throw new Exception("Not a computer's move");
+            }
+
+            if (StickCount % 2 == 0)
+            {
+                StickCount -= 1;
+            }
+            else
+            {
+                StickCount -= 2;
+            }
+
+            IsPlayersTurn = true;
+        }
 
         // GetResults, kurš uzvar, kāds rezultāts etc.
 
